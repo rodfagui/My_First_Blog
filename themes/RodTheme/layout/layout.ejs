@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= config.title %></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <%- css("css/styles.css") %>
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/f9a2b5c07c.js"></script>
+</head>
+
+<body>
+	<!--Barra de Navegación-->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  	<div class="container">
+    	<div class="navbar-header">
+      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        </button>
+        <a href='<%- url_for(layout.ejs) %>' class="navbar-brand">Rod-blog</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav navbar-right">
+        	<li><a href='<%- url_for(layout.ejs) %>'>Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 jumbotron text-center" id="jumbo">
+        <h1>Tecno Blog</h1>
+        <p>Un blog con noticias de vanguardia tecnológica</p>
+        <div class="divider"></div>
+        <h3>By <%= config.author %></h3>
+        <div class="social">
+        	<a href="https://www.facebook.com/rodman.aguirre" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        	<a href="https://twitter.com/rodfagui" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        	<a href="https://github.com/rodfagui" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<%- body %>
+  
+  <!--footer-->
+  <footer>
+  	<div class="container" id="social">
+    	<div class="row">
+      	<div class="col-sm-8 col-sm-offset-2 text-center">
+        	<p class="copyright text-muted">Copyright &copy; Rodman Aguirre 2017</p>        
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
