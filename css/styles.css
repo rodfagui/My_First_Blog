@@ -1,0 +1,72 @@
+*{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+body{
+	padding-top: 50px;
+}
+
+#jumbo{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/trolltunga.jpg') no-repeat center center;
+	background-size: cover;
+	border-radius: 0;
+	color: white;
+}
+
+.divider{
+	width: 80px;
+	border-top: 5px solid #fed136;
+	margin: 0 auto;
+}
+
+.social a{
+	color: white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+.social a:hover{
+	background-color: #fed136;
+}
+
+.post-element ul{
+  list-style: none;
+}
+
+.post-element li{
+  padding-bottom: 30px;
+}
+
+.post-element li p:nth-child(3){
+  font-weight: bold;
+}
+
+.post-link{
+	color: black;
+	font-size: 30px;
+}
+
+.post-link:hover{
+	text-decoration: none;
+	color: #808080;
+}
+
+.post h1{
+	text-align: center;
+}
+
+#post-body{
+	text-align: justify;
+	line-height: 1.5;
+}
